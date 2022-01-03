@@ -1,0 +1,15 @@
+type Query{
+    customers: [Customer]
+    customersByName (name: String): [Customer]
+}
+
+type Customer {
+    id : ID
+    name : String
+    emails: [Email]
+}
+
+type Email {
+    id : String
+    email : String
+}

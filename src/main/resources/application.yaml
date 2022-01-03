@@ -1,0 +1,22 @@
+#spring.graphql.path=/graphql
+#spring.graphql.websocket.path=/graphql
+spring:
+  graphql:
+    path: /graphql
+    websocket:
+      path: /graphql
+
+  data:
+    mongodb:
+      database: test
+      host: localhost
+      port: 27017
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb: debug
